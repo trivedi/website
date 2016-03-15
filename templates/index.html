@@ -14,14 +14,15 @@
 
 <div id="reading">
 	<h3>Currently reading</h3>
-	<ul>Remainder</ul>
-	<ul>The Year of Magical Thinking</ul>
-	<ul>When Breath Becomes Air</ul>
-
+	{% for book in currently_reading %}
+	    <p>{{ book }}</p>
+	{% endfor %}
 	<br>
 
 	<h3>Recently read</h3>
-	<ul>A Confederacy of Dunces</ul>
+	{% for book in read %}
+	    <p>{{ book }}</p>
+	{% endfor %}
 </div>
 
 
