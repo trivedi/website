@@ -1,0 +1,36 @@
+body {
+    /*background-color: #f7eee1;*/
+    font-family: "Helvetica Neue", Georgia, Palatino, "Times New Roman", serif;
+}
+
+h2 {
+	font-size: .9em;	
+}
+
+h3 {
+	font-size: .9em;
+	padding-bottom: 3px;
+}
+
+ul {
+	font-size: .9em;
+	line-height: .6em;
+}
+
+#reading {
+	padding-top: 15px;
+}
+
+#sidebar {
+	float: left;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	width: 150px;
+}
+
+#sidebar-img {
+	width: 112px;
+}
+
+
