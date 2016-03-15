@@ -1,12 +1,12 @@
 <!doctype html>
 <head>
     <title>Nishad</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
 
 <div id="sidebar">
-	<img id="sidebar-img" src="img/cups.jpg"></img>
+	<img id="sidebar-img" src="{{ url_for('static', filename='img/cups.jpg') }}"></img>
 	<h2>Nishad Trivedi</h2>
 	<p><a href="https://twitter.com/nishadtrivedi">Twitter</a></p>
 	<p><a href="https://github.com/trivedi">Code</a></p>
