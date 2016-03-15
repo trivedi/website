@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', \
+    return render_template('index.html', quote=util.get_quote(), \
     						currently_reading=util.get_books('currently-reading'), \
     						read=util.get_books('read'))
 
