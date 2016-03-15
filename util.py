@@ -10,13 +10,17 @@ def get_books(shelf, n=4):
     r=requests.get('https://www.goodreads.com/review/list.xml', params={'key':secret.key, 'id':secret.id, 'v':'2', 'shelf':shelf})
 
     xml = r.text
+    print xml
     root = ET.fromstring(xml.encode('utf-8'))
-    return [title.text for book in root.iter('book') for title in book.iter('title')][:n]
+    # (title, isbn-10) -> ('Infinite Jest', '0316066524')
+    return [(book.find('title').text, book.find('isbn').text) for book in root.iter('book')][:n]
+   
 
 
 def get_quote():
-	quotes = ['"Think? Why think! We have computers to do that for us." - Jean Rostand']
+	quotes = ['"Think? Why think! We have computers to do that for us." - Jean Rostand', 
+				'"Dear Sir: Regarding your article \'What\'s Wrong with the World?\' I am. Yours truly," - G.K. Chesterton']
 	return choice(quotes)
 
-#print get_books('currently-reading')
+print get_books('currently-reading')
 #print get_books('read')

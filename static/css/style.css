@@ -1,6 +1,7 @@
 body {
     /*background-color: #f7eee1;*/
     font-family: "Helvetica Neue", Helvetica, Georgia, Palatino, "Times New Roman", serif;
+    height: 100%;
 }
 
 a {
@@ -9,7 +10,7 @@ a {
 }
 
 a:link {
-	background-color: #ffc;
+	/*background-color: #ffc;*/
 }
 
 a:hover {
@@ -19,10 +20,11 @@ a:hover {
 
 h2 {
 	color: #43cc65;
-	font-size: 1.1em;	
+	font-size: 1.35em;	
 }
 
 h3 {
+	color: #408cff;
 	font-size: .9em;
 	margin-top: 10px;
 	margin-bottom: 0px;
@@ -39,6 +41,8 @@ ul {
 
 .sidebar-links > p {
 	color: gray;
+	margin-top: 2px;
+	margin-bottom: 6px; 
 }
 
 .sidebar-links > p > img {
@@ -46,14 +50,22 @@ ul {
 }
 
 #reading {
+	margin: 0px;
 	padding-top: 15px;
+	width: 90%;
+}
+
+#sauron {
+	color: #ff5940;
+	float: right;
+	width: 10%;
 }
 
 #sidebar {
 	float: left;
 	padding-top: 30px;
 	padding-left: 60px;
-	padding-right: 60px;
+	padding-right: 80px;
 	width: 150px;
 }
 
@@ -62,6 +74,9 @@ ul {
 	height: 200px;
 }
 
+#sidebar > p {
+	font-size: .85em;
+}
 
 
 

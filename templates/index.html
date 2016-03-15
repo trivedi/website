@@ -1,20 +1,22 @@
 <!doctype html>
 <head>
-    <title>Nishad</title>
+    <title>Nishad Trivedi</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="{{ url_for('static', filename='js/sauron.js') }}"></script>
 </head>
 <body>
 
 <div id="sidebar">
 	<img src="{{ url_for('static', filename='img/cups-cropped.jpeg') }}"></img>
 	<h2>Nishad Trivedi</h2>
-	<p><em>{{ quote }}</em></p>
+	<p style="color:gray;"><em>{{ quote }}</em></p>
 	<div class="sidebar-links">
 		<p><img src="{{ url_for('static', filename='img/location.png') }}"></img>Minneapolis, MN</p> 
 		<p><img src="{{ url_for('static', filename='img/writing.png') }}"></img><a href="#">Writing</a></p> 
 		<p><img src="{{ url_for('static', filename='img/twitter.png') }}"></img><a href="https://twitter.com/nishadtrivedi">Twitter</a></p>
 		<p><img src="{{ url_for('static', filename='img/github.png') }}"></img><a href="https://github.com/trivedi">Code</a></p>
-		<p><a href="{{ url_for('templates', filename='about.html') }}">Colophon</a></p>
+		<p><img src="{{ url_for('static', filename='img/about.png') }}"></img><a href="{{ url_for('about') }}">Colophon</a></p>
 	</div>
 </div>
 
@@ -23,17 +25,23 @@
 	
 	<ul>
 		{% for book in currently_reading %}
-		    <li>{{ book }}</li>
+		    <li><a href="http://www.smile.amazon.com/gp/product/{{ book[1] }}">{{ book[0] }}</a></li>
 		{% endfor %}
 	</ul>
 	<br>
 
 	<h3>Recently read</h3>
 	<ul>
-	{% for book in read %}
-	    <li>{{ book }}</li>
-	{% endfor %}
+	    {% for book in read %}
+		    <li><a href="http://www.smile.amazon.com/gp/product/{{ book[1] }}">{{ book[0] }}</a></li>
+		{% endfor %}
 	</ul>
+</div>
+
+<div id="sauron">
+	<img src="{{ url_for('static', filename='img/sauron.png') }}"></img>
+	&#2384;
+
 </div>
 
 
