@@ -2,8 +2,10 @@
 <head>
     <title>About</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
 </head>
 <body>
+	<div class="content">
 	<h2>We Interrupt Your Regularly Scheduled Programming to Bring You This Very Important Public Service Announcement</h2>
 	<p>This website is proudly powered by atoms with the help of <a href="https://docs.python.org/2/index.html">snakes</a> 
 	in a <a href="http://flask.pocoo.org/">flask</a>.
@@ -19,6 +21,6 @@
 		</ul>
 
 	<p>And now back to your <a href="{{ url_for('index') }}">regulary scheduled programming<a/>.</p>
-
+	</div>
 </body>
 </html>

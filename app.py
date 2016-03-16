@@ -9,5 +9,10 @@ def index():
     						currently_reading=util.get_books('currently-reading'), \
     						read=util.get_books('read'))
 
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
