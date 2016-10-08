@@ -1,8 +1,0 @@
-{
-  "name": "Personal website",
-  "description": "Nishad Trivedi's personal website",
-  "image": "heroku/python",
-  "repository": "https://github.com/trivedi/website",
-  "keywords": ["python", "flask" ],
-  "addons": []
-}
