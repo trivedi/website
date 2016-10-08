@@ -14,5 +14,10 @@ def about():
 	return render_template('about.html')
 
 
+@app.route('/teaching')
+def teaching():
+	return render_template('teaching.html')
+
+
 if __name__ == '__main__':
 	app.run(debug=True)

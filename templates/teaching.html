@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+    <title>Teaching</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/pace.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/color.js') }}"></script>
+
+</head>
+<body>
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+	<h3>Currently</h3>
+	<ul>
+		<li><a href="#">CSCI 1113 - Introduction to Programming for Engineers</a>, Spring 2016</li>
+		Taught by Dr. James Parker
+	</ul>
+	<h3>Previously</h3>
+	<ul>	
+		<li><a href="#">CSCI 5271 - Introduction to Computer Security</a>, Fall 2015</li>
+		> Taught by <a href="http://cs.umn.edu/~mccamant/">Dr. Stephen McCamant</a>
+		<li><a href="#">CSCI 2021 - Machine Architecture and Organization</a>, Spring 2015</li>
+		Taught by <a href="http://cs.umn.edu/~zhai/">Dr. Antonia Zhai</a>, <a href="http://cs.umn.edu/~mccamant/">Dr. Stephen McCamant</a>
+		<li><a href="#">CSCI 2021 - Machine Architecture and Organization</a>, Fall 2014</li>
+		Taught by <a href="http://cs.umn.edu/~yew/">Dr. Pen-Chung Yew</a>
+		<li><a href="#">CSCI 1133 - Introduction to Programming Concepts</a>, Spring 2014</li>
+		Taught by <a href="http://cs.umn.edu/~sjguy/">Dr. Stephen J. Guy</a>
+	</ul>
+
+	<p>N.b. All were done as a Teaching Assistant at the University of Minnesota, College of Science & Engineering</p>
+	<p><a href="{{ url_for('index') }}">Home</a> &#8617;</p>
+	</div>
+</body>
+</html>

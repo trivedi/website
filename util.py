@@ -22,5 +22,5 @@ def get_quote():
 				'"Dear Sir: Regarding your article \'What\'s Wrong with the World?\' I am. Yours truly," - G.K. Chesterton']
 	return choice(quotes)
 
-print get_books('currently-reading')
+#print get_books('currently-reading')
 #print get_books('read')
